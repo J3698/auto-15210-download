@@ -1,0 +1,3 @@
+# ssh into the andrew machines, cd into 15210, call update, cd into the most
+# recently modified folder, and then start bash for further interaction
+alias 210="ssh -t ANDREWID@unix.andrew.cmu.edu 'cd ~/private/15210/ && ./update.sh && cd `ls -td -- */ | head -n 1`; bash -l'"
