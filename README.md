@@ -30,7 +30,7 @@ given by the command from step 3. Case matters!
 
 6. Copy update.sh from this repository into your 210 folder, make it executable,
 and run it. Note that it will delete .tgz files in the folder as part of
-cleanup, and thaat undownloaded labs will be downloaded.
+cleanup, and that undownloaded labs will be downloaded.
 
 `cd ~/private/15210`
 
