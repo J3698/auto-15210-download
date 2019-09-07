@@ -2,7 +2,9 @@ The image below shows how I work on 15-210 homework. I type 210 from terminal,
 and new labs are automatically downloaded and extracted. Then I'm placed into
 the directory of the newest lab.
 
-![Cool script](./example.png)
+<p align="center">
+  <img src="./example.png">
+</p>
 
 This repository is a reference for anyone else who wants to do this. 
 
