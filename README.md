@@ -11,20 +11,18 @@ This repository is a reference for anyone else who wants to do this.
 1. Clone [diderot-cli](https://github.com/diderot-edu/diderot-cli) into your
 private drectory on AFS.
 
-`cd private
-git clone https://github.com/diderot-edu/diderot-cli
-`
+`cd private`
+
+`git clone https://github.com/diderot-edu/diderot-cli`
 
 2. Create a file private/.diderot/credentials, and place your andrew email
 address as the first line, and your diderot password as the second line. This
 is detailed in the README of diderot-cli.
 
 3. Now if you run the following command, you will get a list of the 15-210
-assignmeents:
+assignments:
 
-`~/private/diderot-cli/diderot_stud​
-31
-`cd ~/private/15210ent list_assignments "15210:F19"`
+`~/private/diderot-cli/diderot_student list_assignments "15210:F19"`
 
 4. Make sure your folder for 210 has the location/name "private/15210", and that
 the folders inside of 15210 for labs you've already downloaded match the names
@@ -34,11 +32,13 @@ given by the command from step 3. Case matters!
 and run it. Note that it will delete .tgz files in the folder as part of
 cleanup, and thaat undownloaded labs will be downloaded.
 
-`cd ~/private/15210
-wget https://raw.githubusercontent.com/J3698/auto-15210-download/master/update
-chmod +x update
-./update
-`
+`cd ~/private/15210`
+
+`wget https://raw.githubusercontent.com/J3698/auto-15210-download/master/update`
+
+`chmod +x update`
+
+`./update`
 
 Now you can automatically download and extract labs using update. The next steps
 are to automatically call update and then cd into the newest directory from your
