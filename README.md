@@ -21,8 +21,8 @@ assignmeents:
 ~/private/diderot-cli/diderot_student list_assignments "15210:F19"
 
 4. Make sure your folder for 210 has the location/name "private/15210", and that
-the folders inside of 15210 match the the names given by the command from
-step 3. Case matters!
+the folders inside of 15210 for labs you've already downloaded match the names
+given by the command from step 3. Case matters!
 
 6. Copy update.sh from this repository into your 210 folder, make it executable,
 and run it. Note that it will delete .tgz files in the folder as part of
