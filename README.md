@@ -45,12 +45,9 @@ are to automatically call update and then cd into the newest directory from your
 local computer.
 
 1. Place the code from the 210 file in this repository at the end of the ~/.bashrc
-file on your local machine, replacing ANDREWID with your andrew id. If you're on
-a mac, you may have to put "source ~/.bashrc" at the end of the ~/.bash_profile
-file (untested).
+file on your local machine, replacing ANDREWID with your andrew id.
 
+2. If you're on a mac, you may have to put "source ~/.bashrc" at the end of the
+~/.bash_profile file.
 
-2. Run `source ~/.bashrc`, and then `210`.
-
-Now whenever you're in terminal, you should be able to run 210 and see the
-magic happen.
+3. Open a new terminal and run `210`.
