@@ -8,12 +8,9 @@ the directory of the newest lab.
 
 This repository is a reference for anyone else who wants to do this. 
 
-1. Clone [diderot-cli](https://github.com/diderot-edu/diderot-cli) into your
-private drectory on AFS.
+1. Add the following to ~/.bashrc on the Unix servers:
 
-`cd private`
-
-`git clone https://github.com/diderot-edu/diderot-cli`
+`export PATH="/afs/cs.cmu.edu/academic/class/15210-s19/diderot-cli:$PATH"`
 
 2. Create a file private/.diderot/credentials, and place your andrew email
 address as the first line, and your diderot password as the second line. This
@@ -22,7 +19,7 @@ is detailed in the README of diderot-cli.
 3. Now if you run the following command, you will get a list of the 15-210
 assignments:
 
-`~/private/diderot-cli/diderot_student list_assignments "15210:F19"`
+`diderot_student list_assignments "15210:F19"`
 
 4. Make sure your folder for 210 has the location/name "private/15210", and that
 the folders inside of 15210 for labs you've already downloaded match the names
