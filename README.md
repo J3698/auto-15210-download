@@ -11,6 +11,8 @@ and then submit to submit the lab.
 
 This repository is a reference for anyone else who wants to do this. 
 
+### Auto download and unzip new labs
+
 1. Add the following to ~/.bashrc on the Unix servers:
 
 `export PATH="/afs/cs.cmu.edu/academic/class/15210-s19/diderot-cli:$PATH"`
@@ -40,9 +42,9 @@ cleanup, and that undownloaded labs will be downloaded.
 
 `./update`
 
-Now you can automatically download and extract labs using update. The next steps
-are to automatically call update and then cd into the newest directory from your
-local computer.
+Now you can automatically download and extract labs using update.
+
+### Auto call update and cd into most recently edited lab
 
 1. Place the code from the add_to_local_bashrc file in this repository at the end
 of the ~/.bashrc file on your local machine, replacing ANDREWID with your andrew
@@ -53,7 +55,7 @@ id.
 
 3. Open a new terminal and run `210` to see the magic happen
 
-The last set of steps are to setup the submit command.
+### Use submit to submit labs
 
 1. Download the code for the submit command
 
