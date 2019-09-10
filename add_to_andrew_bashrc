@@ -1,0 +1,12 @@
+submit_cli() {                                                                  
+    read -r -p "Submit assignment? [y/N] " response                             
+    case "$response" in                                                         
+        [yY][eE][sS]|[yY])                                                      
+            diderot_student submit_assignment 15210:F19 `expr \`pwd\` : ".*15210/\(.*\)"` handin.tgz
+            ;;                                                                  
+        *)                                                                      
+            true                                                                
+            ;;                                                                  
+    esac                                                                        
+}                                                                               
+alias submit=submit_cli 
