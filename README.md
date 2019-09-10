@@ -57,7 +57,7 @@ id.
 
 ### Use submit to submit labs
 
-1. Download the code for the submit command
+1. Download the code for the submit command onto the andrew machines
 
 `wget https://raw.githubusercontent.com/J3698/auto-15210-download/master/add_to_andrew_bashrc`
 
@@ -65,4 +65,4 @@ id.
 
 `cat add_to_andrew_bashrc >> ~/.bashrc && rm add_to_andrew_bashrc`
 
-3. In a an appropriately named lab folder, run make and then submit (I don't suggest testing this on labs with past due dates).
+3. In a an appropriately named lab folder, run make and then submit (I don't suggest testing this on labs with past due dates, as they will become late).
