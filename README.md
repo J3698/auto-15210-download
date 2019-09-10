@@ -66,3 +66,5 @@ id.
 `cat add_to_andrew_bashrc >> ~/.bashrc && rm add_to_andrew_bashrc`
 
 3. In a an appropriately named lab folder, run make and then submit (I don't suggest testing this on labs with past due dates, as they will become late).
+
+Note that the end of the path for the folder you're in must be of the format 15210/labname, e.g. 15210/ParenLab; 15210/parenlab or 15451/ParenLab won't work.
