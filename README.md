@@ -1,10 +1,13 @@
 The image below shows how I work on 15-210 homework. I type 210 from terminal,
 and new labs are automatically downloaded and extracted. Then I'm placed into
-the directory of the newest lab.
+the directory of the newest lab. 
 
 <p align="center">
   <img src="./example.png">
 </p>
+
+In addition, when I'm in a lab folder, I type make to create a handin as usual,
+and then submit to submit the lab.
 
 This repository is a reference for anyone else who wants to do this. 
 
@@ -41,10 +44,23 @@ Now you can automatically download and extract labs using update. The next steps
 are to automatically call update and then cd into the newest directory from your
 local computer.
 
-1. Place the code from the 210 file in this repository at the end of the ~/.bashrc
-file on your local machine, replacing ANDREWID with your andrew id.
+1. Place the code from the add_to_local_bashrc file in this repository at the end
+of the ~/.bashrc file on your local machine, replacing ANDREWID with your andrew
+id.
 
 2. If you're on a mac, you may have to put "source ~/.bashrc" at the end of the
 ~/.bash_profile file.
 
-3. Open a new terminal and run `210`.
+3. Open a new terminal and run `210` to see the magic happen
+
+The last set of steps are to setup the submit command.
+
+1. Download the code for the submit command
+
+`wget https://raw.githubusercontent.com/J3698/auto-15210-download/master/add_to_andrew_bashrc`
+
+2. Add the code to your andrew ~/.bashrc
+
+`cat add_to_andrew_bashrc >> ~/.bashrc && rm add_to_andrew_bashrc`
+
+3. In a an appropriately named lab folder, run make and then submit (I don't suggest testing this on labs with past due dates).
