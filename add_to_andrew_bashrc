@@ -1,12 +1,21 @@
-submit_cli() {                                                                  
-    read -r -p "Submit assignment? [y/N] " response                             
-    case "$response" in                                                         
-        [yY][eE][sS]|[yY])                                                      
+submit_cli() {    
+    read -r -p "Run make? [y/N] " response
+    case "$response" in    
+        [yY][eE][sS]|[yY])    
+            make
+            ;;    
+        *)    
+            true    
+            ;;    
+    esac    
+    read -r -p "Submit assignment? [y/N] " response    
+    case "$response" in    
+        [yY][eE][sS]|[yY])    
             diderot_student submit_assignment 15210:F19 `expr \`pwd\` : ".*15210/\(.*\)"` handin.tgz
-            ;;                                                                  
-        *)                                                                      
-            true                                                                
-            ;;                                                                  
-    esac                                                                        
-}                                                                               
-alias submit=submit_cli 
+            ;;    
+        *)    
+            true    
+            ;;    
+    esac    
+}    
+alias submit=submit_cli
